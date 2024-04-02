@@ -17,6 +17,9 @@ app.use(cors())
 
 
 // user routes
+app.get('/',(req,res)=>{
+    res.status(200).send("hello world");
+})
 app.use('/api', UserRoutes)
 
 
